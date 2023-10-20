@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    background-color: #3F88C5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+}
+#navbar{
+    background-color: #BA1200;
+    font-size: 3em;
+}
+a .navbarLink{
+    color: #F0F2EF;
+    text-decoration: none;
+}
+a:hover .navbarLink{
+    color: #BA1200;
+    background-color: #032B43;
+    text-decoration: underline;
+}
