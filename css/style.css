@@ -2,20 +2,28 @@
     margin: 0;
     padding: 0;
 }
-#container{
-    background-color: #3F88C5;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2.5em;
+body{
+    background-color: #6D696A;
 }
-#navbar{
-    background-color: #BA1200;
+#container{
+    font-family: Arial, Helvetica, sans-serif ;
     font-size: 3em;
 }
-a .navbarLink{
+#navbar{
+    background-color: #5DB7DE;
+    font-size: 3.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbarLink{
+    padding: 30px;
+}
+a{
     color: #F0F2EF;
     text-decoration: none;
 }
-a:hover .navbarLink{
+a:hover{
     color: #BA1200;
     background-color: #032B43;
     text-decoration: underline;
