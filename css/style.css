@@ -1,30 +1,91 @@
+/*Import Font*/
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: #6D696A;
+    background-color: #F0F2EF;
 }
-#container{
-    font-family: Arial, Helvetica, sans-serif ;
-    font-size: 3em;
+#containerAll{
+    font-family: Montserrat, sans-serif ;
+    font-size: 0.7em;
+    color: #0d0d0d;
 }
+/*Inicio NAVBAR*/
 #navbar{
-    background-color: #5DB7DE;
-    font-size: 3.2em;
+    background-color: #032B43;
+    font-size: 1.2em;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100vw;
+    height: 10vh;
+}
+#linkscontainer{
+    display: flex;
+    justify-content: flex-end;
 }
 .navbarLink{
-    padding: 30px;
+    padding: 50px;
+    margin-right: 1.2em;
+}
+#logo_has img{
+    width: 80px;
+    margin-left: 20px;
 }
 a{
     color: #F0F2EF;
     text-decoration: none;
 }
 a:hover{
-    color: #BA1200;
-    background-color: #032B43;
+    color: #5DB7DE;
+    background-color: #F0F2EF;
     text-decoration: underline;
 }
+/*Fim NAVBAR*/
+/*Inicio Content*/
+/*Inicio bakcground img*/
+#content{
+    display: grid;
+    justify-items: center;
+}
+
+#principalImg{
+    width: 100vw;
+    height: 40vh;
+}
+#principalImg h1{
+    color: #F0F2EF;
+    font-size: 80px;
+    font-weight: 700;
+    padding: 20vh;   
+}
+#darkness{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100vw;
+    height: 40vh;
+}
+#principalImg img{
+    width: 100vw;
+    background-size: cover;
+    height: 40vh;
+    object-fit: cover;
+}
+#title-container{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 999;
+}
+/*fim bakcground img*/
+/*Inicio cards*/
+#cardsContainer{
+    
+}
+/*fim cards*/
+/*fim content*/
