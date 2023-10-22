@@ -1,0 +1,153 @@
+/*Import Font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Criando font-face para importar fonte local */
+@font-face {
+    font-family: 'comfortaa';
+    src: url('fonts/Comfortaa-Bold.ttf') format('truetype'), url('fonts/Comfortaa-Light.ttf') format('truetype'), url('fonts/Comfortaa-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'lemon';
+    src: url('fonts/LEMONMILK-Bold.otf') format('opentype'), url('fonts/LEMONMILK-BoldItalic.otf') format('opentype'), url('fonts/LEMONMILK-Light.otf') format('opentype'), url('fonts/LEMONMILK-LightItalic.otf') format('opentype'), url('fonts/LEMONMILK-Medium.otf') format('opentype'), url('fonts/LEMONMILK-MediumItalic.otf') format('opentype'), url('fonts/LEMONMILK-Regular.otf') format('opentype'), url('fonts/LEMONMILK-RegularItalic.otf') format('opentype');
+}
+
+/* 
+font-family: 'lemon' (títulos)
+font-family: 'comfortaa' (textos e outros)
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: #F0F2EF;
+    overflow-x: hidden;
+}
+#containerAll{
+    font-family: 'comfortaa', serif;
+    font-size: 0.7em;
+    color: #0d0d0d;
+}
+
+/*Inicio NAVBAR*/
+
+#navbar{
+    background-color: #032B43;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+}
+#linkscontainer{
+    display: flex;
+    justify-content: flex-end;
+}
+.navbarLink{
+    padding: 50px;
+    margin-right: 1.2em;
+}
+#logo_has img{
+    width: 80px;
+    margin-left: 20px;
+}
+a{
+    color: #F0F2EF;
+    text-decoration: none;
+    font-family: 'lemon';
+    font-size: 1.7em;
+}
+
+/*Fim NAVBAR*/
+
+/*Inicio Content*/
+
+/*Inicio bakcground img*/
+#content{
+    display: grid;
+    justify-items: center;
+}
+
+#principalImg{
+    width: 100vw;
+    height: 30vh;
+}
+#principalImg h1{
+    color: #F0F2EF;
+    font-size: 5em;
+    font-weight: 700;
+    /* padding: 20vh;  */
+    font-family: 'lemon';
+
+}
+#darkness{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+}
+#principalImg img{
+    width: 100vw;
+    background-size: cover;
+    height: 30vh;
+    object-fit: cover;
+}
+#title-container{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 999;
+    
+}
+
+/* Pag Experimento */
+
+
+.experiment-desc-container{
+    display: flex;
+    width: 73vw;
+    justify-content: center;
+    margin-top: 10em;
+}
+
+.left-item-desc{
+    margin-right: 3em;
+}
+
+.title-desc{
+    font-family: 'lemon';
+    font-size: 5em;
+    margin-bottom: .6em;
+}
+
+.paragraphy{
+    font-family: 'comfortaa';
+    font-size: 2em;
+    text-align: justify;
+}
+
+footer{
+    background-color: #032B43;
+    margin-top: 10em;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'lemon';
+    padding: 4em;
+}
+
+.mid-item-footer{
+    font-size: 3em;
+}
+
+.right-item-footer{
+    font-size: 1.7em;
+}
