@@ -127,6 +127,10 @@ a{
     margin-bottom: .6em;
 }
 
+.img-desc{
+    width: 36vw;
+}
+
 .paragraphy{
     font-family: 'comfortaa';
     font-size: 2em;
