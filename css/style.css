@@ -43,12 +43,33 @@ a:hover{
     background-color: #F0F2EF;
     text-decoration: underline;
 }
+
+.menuItem{
+    font-weight: bold;
+    font-size: 1.5vw;
+}
 /*Fim NAVBAR*/
 /*Inicio Content*/
+.pageDescription{
+    width:30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.justify{
+    margin-left: 12vw;
+}
 /*Inicio bakcground img*/
 #content{
     display: grid;
     justify-items: center;
+    font-weight: 500;
+}
+
+.letter-size{
+    font-size: 12px;
 }
 
 #principalImg{
@@ -84,8 +105,62 @@ a:hover{
 }
 /*fim bakcground img*/
 /*Inicio cards*/
+
+h4{
+    font-size: 2vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
 #cardsContainer{
-    
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width:70vw;
+    padding:0.2vw;
+}
+
+.ExperimentCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px -1px rgb(127, 127, 127);
+    margin-right: 2vw;
+    text-align: justify;
+    padding: 23px;
+}
+
+.ProjectsImg{
+    width:100%;
+    padding: 0;
+}
+
+.ProjectsImgM{
+    height: 29vh;
+    width:100%;
+    padding: 0;
 }
 /*fim cards*/
 /*fim content*/
+/*Inicio footer*/
+footer{
+    background-color: #032B43;
+    margin-top: 10em;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'lemon';
+    padding: 4em;
+}
+
+.mid-item-footer{
+    font-size: 3em;
+}
+
+.right-item-footer{
+    font-size: 1.7em;
+}
+/*Fim footer*/
