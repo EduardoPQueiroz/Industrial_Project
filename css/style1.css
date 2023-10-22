@@ -23,6 +23,7 @@ font-family: 'comfortaa' (textos e outros)
 }
 body{
     background-color: #F0F2EF;
+    overflow-x: hidden;
 }
 #containerAll{
     font-family: 'comfortaa', serif;
