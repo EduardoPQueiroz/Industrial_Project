@@ -64,17 +64,23 @@ a{
 /*Fim NAVBAR*/
 
 /*Inicio Content*/
+
+#pageSubtitle{
+    font-size: 30px;
+}
 .pageDescription{
     width:30vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
-.justify{
-    margin-left: 12vw;
+#Description-container{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
 }
+
 /*Inicio bakcground img*/
 #content{
     display: grid;
@@ -82,9 +88,7 @@ a{
     font-weight: 500;
 }
 
-.letter-size{
-    font-size: 12px;
-}
+
 
 #principalImg{
     width: 100vw;
