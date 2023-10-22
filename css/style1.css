@@ -60,16 +60,7 @@ a{
     font-family: 'lemon';
     font-size: 1.7em;
 }
-a:hover{
-    color: #5DB7DE;
-    background-color: #F0F2EF;
-    text-decoration: underline;
-}
 
-.menuItem{
-    font-weight: bold;
-    font-size: 1vw;
-}
 /*Fim NAVBAR*/
 
 /*Inicio Content*/
@@ -102,30 +93,32 @@ a:hover{
 }
 #principalImg h1{
     color: #F0F2EF;
-    font-size: 80px;
+    font-size: 5em;
     font-weight: 700;
-    padding: 20vh;   
+    font-family: 'lemon';
+
 }
 #darkness{
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     width: 100vw;
-    height: 40vh;
+    height: 30vh;
 }
 #principalImg img{
     width: 100vw;
     background-size: cover;
-    height: 40vh;
+    height: 30vh;
     object-fit: cover;
 }
 #title-container{
     width: 100vw;
-    height: 40vh;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     z-index: 999;
+    font-family: 'lemon';
 }
 /*fim bakcground img*/
 /*Inicio cards*/
@@ -181,11 +174,11 @@ footer{
     padding: 4em;
 }
 
-.mid-item-footer{
+.mid-item-footer h2{
     font-size: 3em;
 }
 
-.right-item-footer{
+.right-item-footer h4{
     font-size: 1.7em;
 }
 /*Fim footer*/
