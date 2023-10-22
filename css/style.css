@@ -1,5 +1,22 @@
 /*Import Font*/
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Criando font-face para importar fonte local */
+@font-face {
+    font-family: 'comfortaa';
+    src: url('fonts/Comfortaa-Bold.ttf') format('truetype'), url('fonts/Comfortaa-Light.ttf') format('truetype'), url('fonts/Comfortaa-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'lemon';
+    src: url('fonts/LEMONMILK-Bold.otf') format('opentype'), url('fonts/LEMONMILK-BoldItalic.otf') format('opentype'), url('fonts/LEMONMILK-Light.otf') format('opentype'), url('fonts/LEMONMILK-LightItalic.otf') format('opentype'), url('fonts/LEMONMILK-Medium.otf') format('opentype'), url('fonts/LEMONMILK-MediumItalic.otf') format('opentype'), url('fonts/LEMONMILK-Regular.otf') format('opentype'), url('fonts/LEMONMILK-RegularItalic.otf') format('opentype');
+}
+
+/* 
+font-family: 'lemon' (títulos)
+font-family: 'comfortaa' (textos e outros)
+
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -8,11 +25,13 @@ body{
     background-color: #F0F2EF;
 }
 #containerAll{
-    font-family: Montserrat, sans-serif ;
+    font-family: 'comfortaa', serif;
     font-size: 0.7em;
     color: #0d0d0d;
 }
+
 /*Inicio NAVBAR*/
+
 #navbar{
     background-color: #032B43;
     font-size: 1.2em;
@@ -37,14 +56,14 @@ body{
 a{
     color: #F0F2EF;
     text-decoration: none;
+    font-family: 'lemon';
+    font-size: 1.7em;
 }
-a:hover{
-    color: #5DB7DE;
-    background-color: #F0F2EF;
-    text-decoration: underline;
-}
+
 /*Fim NAVBAR*/
+
 /*Inicio Content*/
+
 /*Inicio bakcground img*/
 #content{
     display: grid;
