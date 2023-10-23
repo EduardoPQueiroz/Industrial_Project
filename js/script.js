@@ -34,6 +34,23 @@ function closeAllCards (cards, arrow, ){
     for(let i = 0; i < cards.length; i++){
         
         cards[i].style.display = 'none';
-        arrow[i].style.rotate = '0deg'
+        arrow[i].style.rotate = '0deg';
     }
 }
+
+let lastPosition = 0;
+
+document.addEventListener("scroll", function scrollHeader(){
+
+    const nav = document.querySelector("nav")
+    let actualPosition = window.scrollY
+
+    if(actualPosition > lastPosition){
+        nav.style.top = "-7em"
+    }
+    else{
+        nav.style.top = "0"
+    }
+
+    lastPosition = actualPosition
+})

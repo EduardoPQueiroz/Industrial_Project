@@ -33,7 +33,7 @@ body{
 
 /*Inicio NAVBAR*/
 
-#navbar{
+nav{
     background-color: #032B43;
     font-size: 1.2em;
     display: flex;
@@ -41,13 +41,18 @@ body{
     align-items: center;
     width: 100vw;
     height: 10vh;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    transition: all 0.2s ease-in-out;
 }
+
 #linkscontainer{
     display: flex;
     justify-content: flex-end;
 }
 .navbarLink{
-    padding: 50px;
+    padding: 33px;
     margin-right: 1.2em;
 }
 #logo_has img{
@@ -205,6 +210,7 @@ footer{
     align-items: center;
     font-family: 'lemon';
     padding: 4em;
+    width:100vw;
 }
 
 .mid-item-footer h2{
