@@ -61,6 +61,12 @@ a{
     font-size: 1.7em;
 }
 
+a:hover{
+    background-color: #F0F2EF;
+    color: #032B43;
+    text-decoration: underline;
+}
+
 /*Fim NAVBAR*/
 
 /*Inicio Content*/
@@ -147,7 +153,11 @@ h4{
     align-items: center;
     box-sizing: border-box;
     width:80vw;
+    
     padding:0.2vw;
+}
+.cards-text{
+    font-size: 13px;
 }
 
 .ExperimentCard{
@@ -155,13 +165,24 @@ h4{
     box-shadow: 0 4px 8px -1px rgb(127, 127, 127);
     text-align: justify;
     margin-right: 3em;
+    transition: all 0.2s ease-in-out;
+    height: 70vh;
+    width:80vw;
+}
+
+.ExperimentCard:hover{
+    transform: scale(1.05);
 }
 
 .cards-content{
-    padding: 2em;
+    padding: 3.2em;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.cards-text{
+    font-size: 15px;
 }
 
 .ProjectsImg{
