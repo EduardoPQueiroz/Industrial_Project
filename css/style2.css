@@ -34,7 +34,7 @@ body{
 
 /*Inicio NAVBAR*/
 
-#navbar{
+nav{
     background-color: #032B43;
     font-size: 1.2em;
     display: flex;
@@ -42,13 +42,18 @@ body{
     align-items: center;
     width: 100vw;
     height: 10vh;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    transition: all 0.2s ease-in-out;
 }
+
 #linkscontainer{
     display: flex;
     justify-content: flex-end;
 }
 .navbarLink{
-    padding: 50px;
+    padding: 1em;
     margin-right: 1.2em;
 }
 #logo_has img{
@@ -60,6 +65,12 @@ a{
     text-decoration: none;
     font-family: 'lemon';
     font-size: 1.7em;
+}
+
+a:hover{
+    background-color: #F0F2EF;
+    color: #032B43;
+    text-decoration: underline;
 }
 
 /*Fim NAVBAR*/
@@ -114,6 +125,7 @@ a{
     display: flex;
     width: 73vw;
     justify-content: center;
+    align-items: center;
     margin-top: 10em;
 }
 
