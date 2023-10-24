@@ -34,7 +34,7 @@ body{
 
 /*Inicio NAVBAR*/
 
-#navbar{
+nav{
     background-color: #032B43;
     font-size: 1.2em;
     display: flex;
@@ -42,24 +42,71 @@ body{
     align-items: center;
     width: 100vw;
     height: 10vh;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    transition: all 0.2s ease-in-out;
 }
+
 #linkscontainer{
     display: flex;
     justify-content: flex-end;
 }
 .navbarLink{
-    padding: 50px;
-    margin-right: 1.2em;
+    padding: 1em;
+    margin-right: 0.8em;
 }
 #logo_has img{
     width: 80px;
     margin-left: 20px;
 }
-a{
+/* a{
     color: #F0F2EF;
     text-decoration: none;
     font-family: 'lemon';
     font-size: 1.7em;
+} */
+a {
+    font-size: 1.7em;
+    font-family: 'lemon';
+    color: #F0F2EF;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+a:focus:after,
+a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+/* a:hover{
+    background-color: #F0F2EF;
+    color: #032B43;
+    text-decoration: underline;
+} */
+a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
 }
 
 /*Fim NAVBAR*/
@@ -114,6 +161,7 @@ a{
     display: flex;
     width: 73vw;
     justify-content: center;
+    align-items: center;
     margin-top: 10em;
 }
 
