@@ -53,25 +53,60 @@ nav{
 }
 .navbarLink{
     padding: 1em;
-    margin-right: 1.2em;
+    margin-right: 0.8em;
 }
 #logo_has img{
     width: 80px;
     margin-left: 20px;
 }
-a{
+/* a{
     color: #F0F2EF;
     text-decoration: none;
     font-family: 'lemon';
     font-size: 1.7em;
+} */
+a {
+    font-size: 1.7em;
+    font-family: 'lemon';
+    color: #F0F2EF;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+a:focus,
+a:hover {
+  color: #fff;
 }
 
-a:hover{
+a:focus:after,
+a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+/* a:hover{
     background-color: #F0F2EF;
     color: #032B43;
     text-decoration: underline;
+} */
+a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
 }
-
 /*Fim NAVBAR*/
 
 /*Inicio Content*/
